@@ -15,7 +15,7 @@ This repository contains the data which constitute the outputs from the optimiza
 - The full set of coalition-scenario run outputs (production, investment,
   producer surplus, and consumer surplus for each of the 42,298 possible
   pairwise coalition combinations among the 13 producers considered).
-- The regression dataset for the the 42,298 possible pairwise coalition 
+- The regression dataset for the the 42,294 possible pairwise coalition 
   combinations used to fit the producer- and consumer-surplus models
   on these outputs (Eq. 3-4 linear regression models).
 
@@ -23,14 +23,16 @@ This repository contains the data which constitute the outputs from the optimiza
 
 ```
 outputs from optimization model/
-    outputs.zip                      Consolidated zipped outputs from the MIQP model for all 
-                                    42,298 coalition combinations. One excel file per 
+    outputX.zip                      Consolidated zipped outputs from the MIQP model for all 
+                                    42,294 coalition combinations. One excel file per 
                                     combination; see "Data dictionary" below for terminologies.
+                                    Zipped files have been divided and numbered X to accomodate
+                                    allowable size for a Github upload.
     DATA_DICTIONARY_README.md        Terminologies and definitions pertaining to the outputs 
                                     from the optimization model,as consolidated in the outputs.zip
 
 regression data/
-    coalition_results.xlsx           An excel file that consolidates all the 42,298 coalition 
+    coalition_results.xlsx           An excel file that consolidates all the 42,294 coalition 
                                     combinations as put in outputs.zip. The file has 38 indicator 
                                     variables representing the possible combinations of pairwise 
                                     producers if they are in a coalition pair or not. The response 
